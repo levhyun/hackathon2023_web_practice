@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KessDatabase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="Main">
+            <div class="blur">
+                <img src="./image/mainLogo.svg">
+            </div>
+        </section>
+        <section class="Service">
+            <div id="serviceLeft">
+                <h3>Service</h3>
+                <p>
+                    개발을 모르는 일반인이라도 쉽게 접해볼 수 있습니다<br>
+                    많은 데이터를 간단한 명령어로 관리할 수 있습니다.<br>
+                    쉬운 영단어를 이용한 명령어이므로 초보자도 쉽게 이용할 수 있습니다.<br>
+                    만약 DB가 어렵고 시작하기 어려우면 당장 KessDB를 시작하세요.
+                </p>
+                <img src="./image/service.png">
+            </div>
+            <div id="serviceRight">
+                <img src="./image/serviceLogo.svg">
+                <p id="ad">카페에서나 바쁜 지하철에서나 간단하게 지금 당장 DB를 설계해보세요.</p>
+                <p id="go">알아보러가기</p>
+                <button>Go</button>
+            </div>
+        </section>
+        <section class="Tutorial">
+            <div id="tutorialLeft">
+                <img src="./image/tutorial.svg">
+            </div>
+            <div id="tutorialRight">
+                <h3>Tutorial</h3>
+                <p id="kessbook">KessBook</p>
+                <p>규칙적인 형식으로 이루어져 있으므로 학습하기에 매우 용이합니다.</p>
+                <p>쉬운 영단어로 된 명령어이기 때문에 쉽게 배울수 있습니다.</p>
+                <p id="gotext">공부하러 가볼까요?</p>
+                <div>
+                    <button>Go</button>
+                </div>
+            </div>
+        </section>
+        <section class="QandA">
+            <div id="qandaLeft">
+                <h3>Q&A</h3>
+                <p id="text">간편하게 물어보세요.</p>
+                <p>
+                    열심히 공부해도 헷갈리기 마련입니다.<br>
+                    온라인 Q&A로 도움을 받아 보세요.    
+                </p>
+                <button>Go</button>
+            </div>
+            <div id="qandaRight">
+                <img src="./image/qanda.svg">
+            </div>
+        </section>
+    </div>
+    <nav>
+        <div class="logo">
+            <span onclick="goToScroll('.Main')">
+                <img src="./image/navBarLogo.svg">
+            </span>
+        </div>
+        <div class="button">
+            <button class="nav-btn">
+                <span onclick="goToScroll('.Main')">Home</span>
+            </button>
+            <button class="nav-btn">
+                <span onclick="goToScroll('.Service')">Service</span>
+            </button>
+            <button class="nav-btn">
+                <span onclick="goToScroll('.Tutorial')">Tutorial</span>
+            </button>
+            <button class="nav-btn">
+                <span onclick="goToScroll('.QandA')">Q&A</span>
+            </button>
+        </div>
+    </nav>
+</body>
+</html>
